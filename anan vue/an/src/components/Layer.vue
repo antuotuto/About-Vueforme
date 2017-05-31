@@ -105,12 +105,12 @@ export default {
       border: 0;
       padding: 0;
       float: left;
-      background: #009688;
+      background: rgba(0, 150, 136,.8);
       color:#fff;
       line-height: 50px;
     }
     .on{
-      background: #d9534f;
+      background: rgba(217, 83, 79,.8);
     }
   }
 

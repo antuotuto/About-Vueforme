@@ -140,7 +140,7 @@ export default {
     left:0;
     overflow: scroll;
     transition: .4s;
-    transform: translate3d(100%, 0, 0);
+    transform: translate3d(0, -100%, 0);
     &.active{
       transform: translate3d(0, 0, 0);
     }
@@ -155,7 +155,7 @@ export default {
     left:0;
     transition: .4s;
     overflow: scroll;
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(0, 100%, 0);
     &.active{
       transform: translate3d(0, 0, 0);
     }
