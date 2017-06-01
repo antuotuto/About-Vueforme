@@ -6,7 +6,7 @@
         <!-- <img src="" alt=""> -->
       </h1>
     </header>
-
+    
     <main>
       <ul class="list">
         <li v-for="(nav,index) in navs" :key="nav.title">
@@ -14,14 +14,6 @@
         </li>
       </ul>
     </main>
-
-    <div class="middle">
-      <ul>
-        <li v-for="(nav,index) in myselfs" :key="nav.title">
-          <span  :style="'background-color:'+nav.bgcolor+';'" @click="$emit(''+nav.click)">{{nav.title}}</span>
-        </li>
-      </ul>
-    </div>
 
     <footer>
       <div class="login">
@@ -36,7 +28,6 @@
 <script>
 import {navs} from '@/data'
 import {ans} from '@/data'
-import {myselfs} from '@/data'
 
 export default {
   name: 'layer',
@@ -45,7 +36,6 @@ export default {
       msg: '王安安',
       navs:navs,
       ans:ans,
-      myselfs,myselfs,
     }
   }
 }

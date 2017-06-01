@@ -8,7 +8,7 @@
     </div>
 
     <div class="view-down" :class="{ active: currentView == 'view-down' }">
-      <components v-bind:is="viewDownComponent"  @login="switchView( 'view-up','login')"  @register="switchView('view-up','register')"  @myself="switchView( 'view-up','myself')"  ></components>
+      <components v-bind:is="viewDownComponent"  @login="switchView( 'view-up','login')"  @register="switchView('view-up','register')"  ></components>
     </div>
 
     <div class="view-up" :class="{ active: currentView == 'view-up' }">

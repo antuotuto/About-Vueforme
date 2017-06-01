@@ -1,38 +1,63 @@
 <template>
-  <div class="Home">
-    <header>
-      <h1 class="banner"><img :src="banner[0]" alt=""></h1>
-    </header>
-
-    <main>
-      <h1 class="title-primary">
-        <a href="#">今日最新</a>
-      </h1>
-      <div class="container">
-        <list-article></list-article>
-      </div>
-    </main>
-
-
-  </div>
+<div class="home">
+  <header>
+    <h1 class="banner"><img :src="banner[0]" alt=""></h1>
+  </header>
+  <main>
+    <h1 class="title-primary">
+      <a href="#">今日最新</a>
+    </h1>
+    <div class="container">
+      <list-article :initItems="articles"></list-article>
+    </div>
+  </main>
+</div>
 </template>
 
 <script>
 import listArticle from '@/components/List-article';
 export default {
-  name: 'Home',
-  data () {
+  name: 'home',
+  data() {
     return {
       banner: ['http://ooi407n8x.bkt.clouddn.com/yao/oneyao-2.png'],
-      msg: '王安安',
+      articles: [{
+        title: 'hah'
+      }]
     }
   },
-  components:{ listArticle }
+  components: {
+    listArticle
+  },
+  created() {
+    this.getArticles()
+  },
+  watch: {},
+  methods: {
+    getArticles() {
+      var that = this
+      var xhr = new XMLHttpRequest()
+      xhr.open('GET', '/articles', false)
+      xhr.onreadystatechange = function(e) {
+        if (xhr.readyState == 4) {
+          if (xhr.status == 200) {
+            var resData = JSON.parse(xhr.responseText)
+            console.log(resData)
+            that.articles = resData
+            console.log(that.articles);
+          } else {
+            console.log('error')
+          }
+        }
+      }
+      xhr.send()
+    }
+  }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style  scoped  >
+<style scoped lang="scss">
+
 .Home{
   height:100%;
   width:100%;
@@ -68,7 +93,6 @@ main{
 .banner{
   width:100%;
 }
-
 
 
 </style>
