@@ -9,7 +9,7 @@
     <main>
       <ul class="list">
         <li v-for="(nav,index) in navs" :key="nav.title">
-          <router-link :to="nav.router" >
+          <router-link :to="nav.router"  @click="$emit('linkTo')" >
             <i class="icon iconfont"  :class="nav.icon"></i>
             <span>{{ nav.title }}</span>
           </router-link>

@@ -7,9 +7,9 @@
         <i class="icon iconfont"  :class="{'icon-liebiao2':currentView == 'view-main','icon-close':currentView != 'view-main'}"></i>
       </button>
     </div>
-
+    
     <div class="view-down" :class="{ active: currentView == 'view-down' }">
-      <components v-bind:is="viewDownComponent"  @login="switchView( 'view-up','login')"  @register="switchView('view-up','register')"  ></components>
+      <components v-bind:is="viewDownComponent"  @login="switchView( 'view-up','login')"  @register="switchView('view-up','register')"  @linkTo="linkToOn"></components>
     </div>
 
     <div class="view-up" :class="{ active: currentView == 'view-up' }">
@@ -40,7 +40,7 @@ export default {
          this.viewDownComponent = 'layer'
          this.showBlank = 'active';
        } else {
-         this.currentView = 'view-main'
+         this.currentView = 'view-main';
          this.showBlank = '';
        }
      },
@@ -51,6 +51,9 @@ export default {
      closeBlank:function (){
        this.showBlank = '';
        this.currentView = 'view-main'
+     },
+     linkToOn:function(){
+       this.currentView = 'view-main';
      }
    },
   components: {
@@ -93,7 +96,7 @@ export default {
         padding:0;
         border: 0;
         background: rgba(0, 0, 0,.7);
-        border-radius: 3px;
+        border-radius: 10px;
         outline: none;
         font-weight: bold;
         font-size: 17px;

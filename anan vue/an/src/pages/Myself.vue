@@ -4,17 +4,29 @@
       <div class="myImg">
 
       </div>
-      <div class="myName">
-        <p>安</p>
-      </div>
       <div class="interest">
+        <div class="myName">
+          <p>安</p>
+        </div>
         <h2>王安安</h2>
         <button type="button" name="button">发表文章</button>
-        <p class="like">王安喜欢的文章</p>
       </div>
     </header>
+    <main>
+      <p>王安发布的文章</p>
+    </main>
     <footer>
       <div class="love-box">
+        <div class="love-message">
+          <div class="love-img">
+
+          </div>
+        </div>
+        <div class="love-message">
+          <div class="love-img">
+
+          </div>
+        </div>
         <div class="love-message">
           <div class="love-img">
 
@@ -114,19 +126,33 @@ export default {
         }
       }
     }
-
+    main{
+      p{
+        color: rgba(0, 0, 0, 0.54);
+        font-size: 16px;
+        font-weight: 500;
+        margin: 32px 16px 0;
+        white-space: nowrap;
+      }
+    }
     footer{
       .love-box{
         display: flex;
         flex-direction:wrap-reverse;
         flex-wrap:wrap;
+        .love-message:nth-child(2n){
+          margin-left: 1%;
+          margin-right: 0;
+        }
         .love-message{
-          margin: 2px;
-          width:48%;
+          margin-top: 8px;
+          margin-right: 1%;
+          width:49%;
           flex-grow:1;
           height:200px;
           display: inline-block;
           background: #fff;
+          box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
           .love-img{
           }
         }
@@ -146,6 +172,7 @@ export default {
           color: #9e9e9e;
           text-align: center;
           margin: 20px;
+          font-size: 15px;
         }
       }
     }
@@ -161,36 +188,39 @@ export default {
     background: #eee;
       header{
         position: relative;
-        width:850px;
         margin: 0 auto;
         .myImg{
-          height:480px;
+          height:400px;
           width:100%;
           background: #34A853;
         }
-        .myName{
-          height:80px;
-          width:80px;
-          border-radius: 80px;
-          background: #C2185B;
-          position: relative;
-          top:-100px;
-          left:30px;
-          box-shadow: 0 2px 5px 0 rgba(0,0,0,0.4);
-          p{
-            line-height: 80px;
-            text-align: center;
-            color:#fff;
-            font-weight: bold;
-            font-size: 18px;
-            letter-spacing: 2px;
-          }
-        }
         .interest{
+          height:1px;
+          width:850px;
+          margin: 0 auto;
+          position: relative;
+          .myName{
+            height:80px;
+            width:80px;
+            border-radius: 80px;
+            background: #C2185B;
+            position: absolute;
+            bottom:50px;
+            left:0;
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,0.4);
+            p{
+              line-height: 80px;
+              text-align: center;
+              color:#fff;
+              font-weight: bold;
+              font-size: 18px;
+              letter-spacing: 2px;
+            }
+          }
           h2{
             position: absolute;
-            bottom: 130px;
-            left: 136px;
+            bottom: 60px;
+            left: 120px;
             color:#fff;
           }
           button{
@@ -205,17 +235,21 @@ export default {
             margin: 20px auto;
             font-weight: 400;
             position: absolute;
-            bottom: 116px;
-            right: 40px;
+            bottom: -36px;
+            right: 0;
             box-shadow: 0 2px 5px 0 rgba(0,0,0,0.4);
           }
-          .like{
-            top:-40px;
-            position: relative;
-            color: rgba(0,0,0,0.54);
-            font-size: 16px;
-            font-weight: 500;
-          }
+        }
+      }
+      main{
+        p{
+          color: rgba(0,0,0,0.54);
+          font-size: 16px;
+          font-weight: 500;
+          margin: 20px auto;
+          margin-bottom: 5px;
+          white-space: nowrap;
+          width:850px;
         }
       }
       footer{
@@ -227,9 +261,9 @@ export default {
           flex-direction:wrap-reverse;
           flex-wrap:wrap;
           .love-message{
-            margin: 2px;
-            width:180px;
-            flex-grow:1;
+            margin-right:8px;
+            margin-top: 15px;
+            width:190px;
             height:200px;
             display: inline-block;
             background: #fff;
@@ -247,13 +281,14 @@ export default {
             color: rgba(0,0,0,0.54);
             font-size: 16px;
             font-weight: 500;
-            margin: 32px 16px 0;
+            margin: 32px 0;
             white-space: nowrap;
           }
           h4{
             color: #9e9e9e;
             text-align: center;
             margin: 20px;
+            font-size: 15px;
           }
         }
       }
