@@ -43,7 +43,8 @@
 
 ```
   src/main.js
-
+  
+  引入vue
   import Vue from 'vue'
 ```
 

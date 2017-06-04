@@ -7,7 +7,7 @@ import router from './router'
 
 // 全局样式
 import '@/assets/iconfont/iconfont.css'
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 // 根组件
 import App from './App'

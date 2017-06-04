@@ -5,9 +5,9 @@
       <main>
         <form class="form-login" action="/login" method="post" enctype="application/x-www-form-urlencoded" @submit.prevent="submitLogin">
           <label for="username">用户名:</label>
-          <input type="text" name="username" value="" v-model="username"  placeholder="邮箱或用户名" required id="username" class="form-control" @input="what_ture_fasle">
+          <input type="text" name="username" value="" v-model="username"  placeholder="邮箱或用户名" required id="username" class="form-control" @input="submitLogin">
           <label for="password">密码:</label>
-          <input type="password" name="password" value=""  v-model="password" placeholder="您的密码" required id="password" class="form-control" @input="what_password_fasle">
+          <input type="password" name="password" value=""  v-model="password" placeholder="您的密码" required id="password" class="form-control" @input="">
           <p class="mistake" :class=" active = mistakeFasle ">{{login}}</p>
           <input type="submit" name="" value="登录" class="btn-login" >
         </form>
@@ -22,10 +22,10 @@ export default {
   name: 'login',
   data () {
     return {
-      username:'wnaganan',
+      username:'wangan',
       password:'qq1010100',
       login:'密码正确',
-      mistakeFasle:'1',
+      mistakeFasle: false,
     }
   },
   methods: {
@@ -34,26 +34,11 @@ export default {
         this.login = '密码正确';
       }else{
         this.login = '密码错误';
+        this.mistakeFasle = 'true';
       }
     },
-    what_ture_fasle : function (e){
-      if (this.username == 'wnaganan') {
-        this.login = '账号正确';
-      } else {
-        this.login = '账号错误';
-        this.mistakeFasle = 'active';
-      }
-    },
-    what_password_fasle : function (){
-      if (this.password == 'qq1010100') {
-        this.login = '密码正确';
-      } else {
-        this.login = '密码错误';
-        this.mistakeFasle = 'active';
-      }
-    }
   }
-  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -118,7 +103,4 @@ export default {
       color:red;
     }
   }
-
-
-
 </style>

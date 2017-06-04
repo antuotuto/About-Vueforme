@@ -20,7 +20,7 @@ export default {
   name: 'home',
   data() {
     return {
-      banner: ['http://ooi407n8x.bkt.clouddn.com/yao/oneyao-2.png'],
+      banner: ['http://ooi407n8x.bkt.clouddn.com/yao/oneyao-4.png'],
       articles: [{
         title: 'hah'
       }]
@@ -42,9 +42,7 @@ export default {
         if (xhr.readyState == 4) {
           if (xhr.status == 200) {
             var resData = JSON.parse(xhr.responseText)
-            console.log(resData)
             that.articles = resData
-            console.log(that.articles);
           } else {
             console.log('error')
           }
@@ -58,41 +56,85 @@ export default {
 
 <style scoped lang="scss">
 
-.Home{
-  height:100%;
-  width:100%;
-}
-header{
-  width:100%;
-}
-header h1{
-  margin: 0;
-}
-header img{
-  width:100%;
-}
-main{
-  padding-top: 30px;
-}
-.container{
-  padding:0 15px;
-}
-.title-primary{
-  margin-bottom: 30px;
-  font-size: 16px;
-  color: black;
-  text-align: center;
-}
-.title-primary a{
-    display: inline-block;
-    padding:0 15px;
-    line-height: 30px;
-    border: 1px solid black;
-    color: black;
-}
-.banner{
-  width:100%;
-}
+  @media screen and (max-width:750px){
+    .home{
+      height:100%;
+      width:100%;
+      overflow: scroll;
+    }
+    header{
+      width:100%;
+      h1{
+        margin: 0;
+        img{
+          width:100%;
+        }
+      }
+    }
+    main{
+      padding-top: 30px;
+    }
+    .container{
+      padding:0 15px;
+    }
+    .title-primary{
+      margin-bottom: 30px;
+      font-size: 16px;
+      color: black;
+      text-align: center;
+    }
+    .title-primary a{
+        display: inline-block;
+        padding:0 15px;
+        line-height: 30px;
+        border: 1px solid black;
+        color: black;
+    }
+    .banner{
+      width:100%;
+    }
+  }
+
+  @media screen and (min-width:950px){
+    .home{
+      height:100%;
+      width:100%;
+      overflow: scroll;
+    }
+    header{
+      width:100%;
+      h1{
+        width:100%;
+        margin: 0;
+        height:500px;
+        overflow: hidden;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        img{
+          height: 100%;
+          filter: blur(6px);
+        }
+      }
+    }
+    main{
+      h1{
+        text-align: center;
+        margin: 50px;
+      }
+    }
+
+    a{
+      color: #000;
+      &:hover{
+        color:#000;
+      }
+    }
+
+
+
+  }
+
 
 
 </style>
