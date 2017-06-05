@@ -15,7 +15,7 @@
         <div class="love-message" v-for="(nav,index) in goodthings" :key="nav.title" >
           <a href="#">
             <div class="love-img">
-              <!-- <img src="" alt=""> -->
+              <img :src="nav.img" alt="">
             </div>
             <div class="love-box-in">
               <p class="love-title">{{nav.title}}</p>
@@ -54,7 +54,7 @@ export default {
     width:100%;
     overflow: scroll;
     header{
-      height:150px;
+      height:200px;
       background: #0f9d58;
       position: relative;
       box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
@@ -64,7 +64,7 @@ export default {
         background: #C2185B;
         border-radius: 50px;
         position: relative;
-        bottom:-125px;
+        bottom:-175px;
         margin: 0 auto;
         line-height: 50px;
         box-shadow: 0 2px 5px 0 rgba(0,0,0,0.4);
@@ -99,13 +99,17 @@ export default {
           margin-right: 1%;
           width:49%;
           flex-grow:1;
-          height:235px;
+          height:270px;
           display: inline-block;
           background: #fff;
           box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
           .love-img{
-            height:100px;
+            height:120px;
+            overflow: hidden;
             background: #eee;
+            img{
+              width:100%;
+            }
           }
           .love-box-in{
             padding: 15px;
@@ -132,7 +136,7 @@ export default {
             .product{
               color: #0f9d58;
               position: absolute;
-              top: 100px;
+              top: 110px;
               left:15px;
             }
           }
@@ -218,7 +222,11 @@ export default {
           margin-right: 20px;
           .love-img{
             height:100px;
+            overflow: hidden;
             background: #eee;
+            img{
+              width:100%;
+            }
           }
           .love-box-in{
             padding: 15px;

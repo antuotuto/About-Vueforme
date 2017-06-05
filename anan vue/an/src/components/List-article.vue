@@ -9,10 +9,10 @@
                 <h4 class="title">{{item.title}}</h4>
                 <p class="des">{{item.description}}</p>
                 <div class="cover">
-                  <!-- <img :src="item.cover" alt=""> -->
-                  <img src="http://ooi407n8x.bkt.clouddn.com/yao/oneyao-4.png" alt="">
+                  <img :src="item.cover" alt="">
+                  <!-- <img src="http://ooi407n8x.bkt.clouddn.com/yao/oneyao-4.png" alt=""> -->
                 </div>
-                <div class="meta">
+                <!-- <div class="meta">
                   <div class="float-left avatar">
                     <img :src="item.avatar" alt="">
                   </div>
@@ -20,7 +20,7 @@
                     <span class="float-right date">{{item.date}}</span>
                     <span class="overflow author-name">{{item.author}}</span>
                   </p>
-                </div>
+                </div> -->
               </router-link>
             </li>
           </ul>
@@ -31,12 +31,14 @@
 </template>
 
 <script>
+import {articles} from '@/data'
 
 export default {
   name: 'list-article',
   data() {
     return {
-      items: this.initItems
+      // items: this.initItems
+      items: articles
     }
   },
   props: {
@@ -68,6 +70,7 @@ export default {
           height:200px;
           width:100%;
           overflow: hidden;
+          border-radius: 5px;
           img{
             width:100%;
             border-radius: 5px;

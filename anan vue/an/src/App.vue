@@ -4,10 +4,10 @@
       <div class="blank" :class="showBlank" @click="closeBlank" ></div>
       <router-view></router-view>
       <button type="button" name="button" class="btn"  @click="toggleView">
-        <i class="icon iconfont"  :class="{'icon-liebiao2':currentView == 'view-main','icon-close':currentView != 'view-main'}"></i>
+        <i class="icon iconfont"  :class="{'icon-all':currentView == 'view-main','icon-close':currentView != 'view-main'}"></i>
       </button>
     </div>
-    
+
     <div class="view-down" :class="{ active: currentView == 'view-down' }">
       <components v-bind:is="viewDownComponent"  @login="switchView( 'view-up','login')"  @register="switchView('view-up','register')"  @linkTo="linkToOn"></components>
     </div>
@@ -53,7 +53,9 @@ export default {
        this.currentView = 'view-main'
      },
      linkToOn:function(){
+       console.log('sdfsdf');
        this.currentView = 'view-main';
+       this.showBlank = '';
      }
    },
   components: {
@@ -93,10 +95,11 @@ export default {
         right: 15px;
         width: 40px;
         height: 40px;
+        line-height: 40px;
         padding:0;
         border: 0;
         background: rgba(0, 0, 0,.7);
-        border-radius: 10px;
+        border-radius: 40px;
         outline: none;
         font-weight: bold;
         font-size: 17px;
@@ -178,6 +181,7 @@ export default {
         right: 15px;
         width: 40px;
         height: 40px;
+        line-height: 40px;
         padding:0;
         border: 0;
         background: rgba(0, 0, 0,.7);

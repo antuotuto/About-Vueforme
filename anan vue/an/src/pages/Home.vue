@@ -20,7 +20,7 @@ export default {
   name: 'home',
   data() {
     return {
-      banner: ['http://ooi407n8x.bkt.clouddn.com/yao/oneyao-4.png'],
+      banner: ['http://ooi407n8x.bkt.clouddn.com/yao/oneyao-2.png'],
       articles: [{
         title: 'hah'
       }]
@@ -112,8 +112,9 @@ export default {
         justify-content:center;
         align-items:center;
         img{
-          height: 100%;
           filter: blur(6px);
+          width:100%;
+          height:auto;
         }
       }
     }

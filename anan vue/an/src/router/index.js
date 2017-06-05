@@ -11,7 +11,7 @@ Vue.use(Router)
 
 const routes = [
   {
-    path: '/',
+    path: '/goodthing',
     name: 'Home',
     component: Home
   },
@@ -26,7 +26,7 @@ const routes = [
     component: Myself
   },
   {
-    path: '/goodthing',
+    path: '/',
     name: 'goodthing',
     component: Goodthing
   }

@@ -8,8 +8,8 @@
     </header>
     <main>
       <ul class="list">
-        <li v-for="(nav,index) in navs" :key="nav.title">
-          <router-link :to="nav.router"  @click="$emit('linkTo')" >
+        <li v-for="(nav,index) in navs" :key="nav.title" @click="$emit('linkTo')">
+          <router-link :to="nav.router">
             <i class="icon iconfont"  :class="nav.icon"></i>
             <span>{{ nav.title }}</span>
           </router-link>
@@ -101,12 +101,12 @@ export default {
           border: 0;
           padding: 0;
           float: left;
-          background: #EF6C00;
+          background: #00897b;
           color:#fff;
           font-size: 17px;
         }
         .on{
-          background: #6A1B9A;
+          background: #d32f2f;
         }
       }
     }
