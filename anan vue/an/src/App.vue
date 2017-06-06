@@ -99,7 +99,7 @@ export default {
         padding:0;
         border: 0;
         background: rgba(0, 0, 0,.7);
-        border-radius: 40px;
+        border-radius: 5px;
         outline: none;
         font-weight: bold;
         font-size: 17px;

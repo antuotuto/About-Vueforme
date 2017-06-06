@@ -5,13 +5,15 @@ import Home from '@/pages/Home'
 import Article from '@/pages/Article'
 import Myself from '@/pages/Myself'
 import Goodthing from '@/components/Goodthing'
+import Like from '@/components/Like'
+import Colorful from '@/components/Colorful'
 
 Vue.use(Router)
 
 
 const routes = [
   {
-    path: '/goodthing',
+    path: '/',
     name: 'Home',
     component: Home
   },
@@ -26,9 +28,19 @@ const routes = [
     component: Myself
   },
   {
-    path: '/',
+    path: '/goodthing',
     name: 'goodthing',
     component: Goodthing
+  },
+  {
+    path: '/like/:id',
+    name: 'like',
+    component: Like
+  },
+  {
+    path: '/colorful',
+    name: 'colorful',
+    component: Colorful
   }
 ]
 

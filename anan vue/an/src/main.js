@@ -7,6 +7,8 @@ import router from './router'
 
 // 全局样式
 import '@/assets/iconfont/iconfont.css'
+import '@/assets/css/animate.css'
+import '@/assets/css/delay.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 // 根组件

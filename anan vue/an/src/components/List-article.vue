@@ -3,12 +3,12 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
-          <ul class="list-article">
+          <ul class="list-article animated  fadeInLeft delay_0">
             <li class="item-article" v-for="item in items">
               <router-link :to="{ name: 'article', params: { id: item.id }}">
-                <h4 class="title">{{item.title}}</h4>
-                <p class="des">{{item.description}}</p>
-                <div class="cover">
+                <h4 class="title animated  fadeInLeft delay_200">{{item.title}}</h4>
+                <p class="des animated  fadeInLeft delay_400">{{item.description}}</p>
+                <div class="cover animated  fadeInLeft delay_600">
                   <img :src="item.cover" alt="">
                   <!-- <img src="http://ooi407n8x.bkt.clouddn.com/yao/oneyao-4.png" alt=""> -->
                 </div>

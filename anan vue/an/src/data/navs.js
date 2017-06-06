@@ -9,7 +9,7 @@ const navs = [
   //   title:'服务端',
   //   icon:['iconfont','icon-zanxuanzhong'],
   //   router: '/myself',
-  //   bgcolor:'#4527A0'
+  //   bgcolor:'#C62828'
   // },
   {
     title:'个人资料',
@@ -17,12 +17,12 @@ const navs = [
     router: '/myself',
     bgcolor:'#AD1457'
   },
-  // {
-  //   title:'设计',
-  //   icon:['iconfont','icon-shoucangxuanzhong'],
-  //   router: '/myself',
-  //   bgcolor:'#C62828'
-  // },
+  {
+    title:'设计',
+    icon:['iconfont','icon-shoucangxuanzhong'],
+    router: '/myself',
+    bgcolor:'#4527A0'
+  },
   // {
   //   title:'人物',
   //   icon:['iconfont','icon-timefill'],
@@ -54,7 +54,7 @@ const navs = [
   //   bgcolor:'#2E7D32'
   // },
   {
-    title:'精品商城',
+    title:'安安新闻',
     icon:['iconfont','icon-tianmaochaoshigouwuche'],
     router: '/goodthing',
     bgcolor:'#2E7D32'

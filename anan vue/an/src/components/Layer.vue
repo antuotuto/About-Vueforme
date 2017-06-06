@@ -8,10 +8,10 @@
     </header>
     <main>
       <ul class="list">
-        <li v-for="(nav,index) in navs" :key="nav.title" @click="$emit('linkTo')">
+        <li v-for="(nav,index) in navs" :key="nav.title" @click="$emit('linkTo')" :style="'background-color:'+nav.bgcolor+';'">
           <router-link :to="nav.router">
-            <i class="icon iconfont"  :class="nav.icon"></i>
-            <span>{{ nav.title }}</span>
+            <!-- <i class="icon iconfont"  :class="nav.icon"></i> -->
+            <p>{{ nav.title }}</p>
           </router-link>
         </li>
       </ul>
@@ -45,11 +45,8 @@ export default {
 <style  scoped lang="scss">
 @media screen and (max-width:750px){
   .layer{
-    height:100%;
-    width:100%;
     header{
       height: 70px;
-      border-bottom: 1px solid #ddd;
       margin-bottom: 10px;
       box-sizing: border-box;
       padding: 23px 15px;
@@ -61,30 +58,28 @@ export default {
     }
     main{
       .list{
-        padding: 0;
+        padding: 5px;
         li{
           list-style: none;
-          width:100%;
-          height:50px;
-          line-height: 50px;
-          padding: 0 15px 0 15px;
+          width:33.3%;
+          line-height:60px;
+          border-radius: 6px;
           box-sizing: border-box;
+          display: flex;
+          flex-direction:wrap-reverse;
+          display: inline-block;
+          flex-wrap:wrap;
+          border: 1px solid #fff;
           a{
-            width:100%;
-            height:100%;
-            display: inline-block;
+            flex-grow:1;
             color: #757575;
-            i{
-              color:#757575;
-              font-size:25px;
-              line-height: 48px;
-            }
-            span{
-              padding-left: 20px;
-              font-weight: 500;
-              line-height: 45px;
-              font-size: 17px;
-              color:#414141;
+            p{
+              color:#fff;
+              text-align: center;
+              margin: 0 auto;
+              font-weight: bold;
+              letter-spacing: 1px;
+              font-size: 15px;
             }
           }
         }
@@ -101,12 +96,12 @@ export default {
           border: 0;
           padding: 0;
           float: left;
-          background: #00897b;
+          background: rgba(0, 136, 122,.7);
           color:#fff;
           font-size: 17px;
         }
         .on{
-          background: #d32f2f;
+          background: rgba(210, 47, 47,.7);
         }
       }
     }
@@ -130,30 +125,28 @@ export default {
     }
     main{
       .list{
-        padding: 0;
+        padding: 5px;
         li{
           list-style: none;
-          width:100%;
-          height:50px;
-          line-height: 50px;
-          padding: 0 15px 0 15px;
+          width:33.3%;
+          line-height:60px;
+          border-radius: 6px;
           box-sizing: border-box;
+          display: flex;
+          flex-direction:wrap-reverse;
+          display: inline-block;
+          flex-wrap:wrap;
+          border: 1px solid #fff;
           a{
-            width:100%;
-            height:100%;
-            display: inline-block;
+            flex-grow:1;
             color: #757575;
-            i{
-              color:#757575;
-              font-size:25px;
-              line-height: 48px;
-            }
-            span{
-              padding-left: 20px;
-              font-weight: 500;
-              line-height: 45px;
-              font-size: 17px;
-              color:#414141;
+            p{
+              color:#fff;
+              text-align: center;
+              margin: 0 auto;
+              font-weight: bold;
+              letter-spacing: 1px;
+              font-size: 15px;
             }
           }
         }

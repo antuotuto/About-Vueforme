@@ -1,28 +1,27 @@
 <template>
   <div class="goodthing">
-
     <header>
-      <div class="name">
+      <div class="name animated  bounceInDown delay_0">
         <!-- <img src="" alt=""> -->
-        <p>an</p>
+        <p class=" animated  bounceInDown delay_200">an</p>
       </div>
     </header>
     <main>
-      <p>推荐社区</p>
+      <p class=" animated  fadeInLeft delay_400">推荐社区</p>
     </main>
     <footer>
-      <div class="love-box">
+      <div class="love-box  animated  fadeInLeft delay_900">
         <div class="love-message" v-for="(nav,index) in goodthings" :key="nav.title" >
-          <a href="#">
-            <div class="love-img">
+          <router-link :to="{ name: 'like', params: { id: nav.id }}">
+            <div class="love-img  animated  fadeInLeft delay_700">
               <img :src="nav.img" alt="">
             </div>
             <div class="love-box-in">
-              <p class="love-title">{{nav.title}}</p>
-              <p class="love-reason">{{nav.reason}}</p>
-              <p class="product">查看商品</p>
+              <p class="love-title  animated  fadeInLeft delay_800">{{nav.title}}</p>
+              <p class="love-reason animated  fadeInLeft delay_900">{{nav.reason}}</p>
+              <p class="product animated  fadeInLeft delay_1000">喜欢</p>
             </div>
-          </a>
+          </router-link>
         </div>
         <div class="love-message love-box-blank"></div>
       </div>

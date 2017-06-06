@@ -1,10 +1,10 @@
 <template>
 <div class="home">
-  <header>
+  <header class=" animated  fadeInLeft delay_0">
     <h1 class="banner"><img :src="banner[0]" alt=""></h1>
   </header>
   <main>
-    <h1 class="title-primary">
+    <h1 class="title-primary animated  fadeInLeft delay_100">
       <a href="#">今日最新</a>
     </h1>
     <div class="container">

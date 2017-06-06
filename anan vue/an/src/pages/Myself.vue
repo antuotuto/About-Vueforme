@@ -5,42 +5,29 @@
 
       </div>
       <div class="interest">
-        <div class="myName">
-          <p>安</p>
+        <div class="myName animated  bounceInDown delay_0">
+          <p name="button" class="animated  bounceInDown delay_200">安</p>
         </div>
-        <h2>王安安</h2>
-        <button type="button" name="button">发表文章</button>
+        <h2 name="button" class="animated  bounceInDown delay_400">王安安</h2>
+        <button type="button" name="button" class="animated  bounceInDown delay_600">发表文章</button>
       </div>
     </header>
-    <main>
+    <main class="animated  fadeInLeft delay_400">
       <p>王安发布的文章</p>
     </main>
     <footer>
-      <div class="love-box">
-        <div class="love-message">
-          <div class="love-img">
-
-          </div>
-        </div>
-        <div class="love-message">
-          <div class="love-img">
-
-          </div>
-        </div>
-        <div class="love-message">
-          <div class="love-img">
-
-          </div>
-        </div>
-        <div class="love-message">
-          <div class="love-img">
-
-          </div>
-        </div>
-        <div class="love-message">
-          <div class="love-img">
-
-          </div>
+      <div class="love-box  animated  fadeInLeft delay_800">
+        <div class="love-message" v-for="(nav,index) in goodthings" :key="nav.title" >
+          <a href="#">
+            <div class="love-img  animated  fadeInLeft delay_700">
+              <img :src="nav.img" alt="">
+            </div>
+            <div class="love-box-in">
+              <p class="love-title  animated  fadeInLeft delay_800">{{nav.title}}</p>
+              <p class="love-reason animated  fadeInLeft delay_900">{{nav.reason}}</p>
+              <p class="product animated  fadeInLeft delay_1000">喜欢</p>
+            </div>
+          </a>
         </div>
         <div class="love-message love-box-blank"></div>
       </div>
@@ -53,13 +40,13 @@
 </template>
 
 <script>
-
+import {goodthings} from '@/data'
 
 export default {
   name: 'myself',
   data () {
     return {
-
+      goodthings : goodthings,
     }
   },
   components:{  }
@@ -149,11 +136,46 @@ export default {
           margin-right: 1%;
           width:49%;
           flex-grow:1;
-          height:200px;
+          height:270px;
           display: inline-block;
           background: #fff;
           box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
           .love-img{
+            height:120px;
+            overflow: hidden;
+            background: #eee;
+            img{
+              width:100%;
+            }
+          }
+          .love-box-in{
+            padding: 15px;
+            position: relative;
+            .love-title{
+              font-size: 16px;
+              line-height: 20px;
+              max-height: 40px;
+              margin-top: 4px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              word-break: break-word;
+              color:#000;
+              margin: 0;
+            }
+            .love-reason{
+              font-size: 12px;
+              margin-top: 4px;
+              overflow: hidden;
+              // text-overflow: ellipsis;
+              // white-space: nowrap;
+              color:rgba(0,0,0,0.45);
+            }
+            .product{
+              color: #0f9d58;
+              position: absolute;
+              top: 110px;
+              left:15px;
+            }
           }
         }
       }
@@ -261,15 +283,49 @@ export default {
           flex-direction:wrap-reverse;
           flex-wrap:wrap;
           .love-message{
-            margin-right:8px;
-            margin-top: 15px;
+            margin: 8px 2px;
             width:190px;
-            height:200px;
+            height:235px;
             display: inline-block;
             background: #fff;
             box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
             margin-right: 20px;
             .love-img{
+              height:100px;
+              overflow: hidden;
+              background: #eee;
+              img{
+                width:100%;
+              }
+            }
+            .love-box-in{
+              padding: 15px;
+              position: relative;
+              .love-title{
+                font-size: 16px;
+                line-height: 20px;
+                max-height: 40px;
+                margin-top: 4px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                word-break: break-word;
+                color:#000;
+                margin: 0;
+              }
+              .love-reason{
+                font-size: 12px;
+                margin-top: 4px;
+                overflow: hidden;
+                // text-overflow: ellipsis;
+                // white-space: nowrap;
+                color:rgba(0,0,0,0.45);
+              }
+              .product{
+                color: #0f9d58;
+                position: absolute;
+                top: 100px;
+                left:15px;
+              }
             }
           }
         }
