@@ -2,7 +2,7 @@ const navs = [
   {
     title:'首页',
     icon:['iconfont','icon-31shouyexuanzhong'],
-    router: '/',
+    router: '/home',
     bgcolor:'#6A1B9A'
   },
   // {
@@ -12,9 +12,9 @@ const navs = [
   //   bgcolor:'#C62828'
   // },
   {
-    title:'个人资料',
+    title:'介绍页',
     icon:['iconfont','icon-peoplefill'],
-    router: '/myself',
+    router: '/',
     bgcolor:'#AD1457'
   },
   {
