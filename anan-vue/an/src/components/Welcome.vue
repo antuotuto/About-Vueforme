@@ -54,7 +54,7 @@
     </div>
 
     <div class="second-paper">
-        <p class="top-message">您可以在任意设备上查看我的个人网站  包括 Iphone and Android</p>
+        <p class="top-message">您可以在任意设备上查看我的个人网站  包括 PC端 Iphone and Android </p>
         <p class="top-message-explain">您可以在任意设备上查看我的个人网站  包括 Iphone and Android 您可以在任意设备上查看我的个人网站  包括 Iphone and Android 您可以在任意设备上查看我的个人网站  包括 Iphone and Android</p>
         <div class="phone">
           <div class="android">
@@ -148,7 +148,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style  scoped lang="scss">
-@media screen and (max-width:750px){
+@media screen and (max-width:940px){
   .welcome{
     height:100%;
     width:100%;
@@ -637,7 +637,7 @@ export default {
       }
     }
     .second-paper{
-      background: #fff;
+      background: #eee;
       height:100%;
       width:100%;
       position: relative;

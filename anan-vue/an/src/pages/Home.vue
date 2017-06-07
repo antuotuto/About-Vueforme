@@ -56,7 +56,7 @@ export default {
 
 <style scoped lang="scss">
 
-  @media screen and (max-width:750px){
+  @media screen and (max-width:940px){
     .home{
       height:100%;
       width:100%;

@@ -55,7 +55,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style  scoped   lang="scss">
-@media screen and (max-width:750px){
+@media screen and (max-width:940px){
   .myself{
     height:100%;
     width:100%;

@@ -53,7 +53,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  @media screen and (max-width:750px){
+  @media screen and (max-width:940px){
     .list-article{
       width:100%;
       padding: 0;
