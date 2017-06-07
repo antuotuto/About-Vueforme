@@ -139,6 +139,41 @@ const colorfuls = [
     colorthree:'#FFEBB7',
     colorfour:'#E67A7A'
   },
+  {
+    title:'6',
+    colorone:'#364F6B',
+    colortwo:'#3FC1C9',
+    colorthree:'#F5F5F5',
+    colorfour:'#FC5185'
+  },
+  {
+    title:'6',
+    colorone:'#1FAB89',
+    colortwo:'#62D2A2',
+    colorthree:'#9DF3C4',
+    colorfour:'#D7FBE8'
+  },
+  {
+    title:'6',
+    colorone:'#07689F',
+    colortwo:'#A2D5F2',
+    colorthree:'#FAFAFA',
+    colorfour:'#FF7E67'
+  },
+  {
+    title:'6',
+    colorone:'#F38181',
+    colortwo:'#FCE38A',
+    colorthree:'#D6F7AD',
+    colorfour:'#95E1D3'
+  },
+  {
+    title:'7',
+    colorone:'#57D1C9',
+    colortwo:'#ED5485',
+    colorthree:'#FFFBCB',
+    colorfour:'#FFE869'
+  },
 
 ]
 

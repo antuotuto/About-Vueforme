@@ -5,12 +5,12 @@ const navs = [
     router: '/home',
     bgcolor:'#6A1B9A'
   },
-  // {
-  //   title:'服务端',
-  //   icon:['iconfont','icon-zanxuanzhong'],
-  //   router: '/myself',
-  //   bgcolor:'#C62828'
-  // },
+  {
+    title:'颜色',
+    icon:['iconfont','icon-zanxuanzhong'],
+    router: '/colorful',
+    bgcolor:'#C62828'
+  },
   {
     title:'介绍页',
     icon:['iconfont','icon-peoplefill'],
@@ -18,7 +18,7 @@ const navs = [
     bgcolor:'#AD1457'
   },
   {
-    title:'设计',
+    title:'个人信息',
     icon:['iconfont','icon-shoucangxuanzhong'],
     router: '/myself',
     bgcolor:'#4527A0'
