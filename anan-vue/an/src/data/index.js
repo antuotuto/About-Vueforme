@@ -5,3 +5,4 @@ export {articles} from './articles';
 export {ans} from './ans';
 export {myselfs} from './myselfs';
 export {goodthings} from './goodthings';
+export {colorfuls} from './colorfuls';
