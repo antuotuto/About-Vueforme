@@ -1,6 +1,6 @@
 <template>
   <div class="welcome">
-    <div class="third-paper ">
+    <div class="third-paper">
       <div class="box-third third-one animated  fadeInLeft delay_200">
         <!-- <img src="" alt=""> -->
       </div>
@@ -11,7 +11,6 @@
           <p class="time animated  fadeInLeft delay_800">06.06.2017</p>
           <p class="article animated  fadeInLeft delay_1000">这个世界上本就没有必须存在的事实 去发现真正属于你的事实 不是其他人对你人生的思考 用自己的理解去编织属于你自己的全新世界 赠予那些此时此刻稳步前进的筑梦者</p>
           <p class="button-fond animated  fadeInLeft delay_1200">王安安</p>
-
         </div>
       </div>
       <div class="box-third third-three animated  fadeInLeft delay_200">
@@ -411,9 +410,13 @@ export default {
         float: left;
         text-align: center;
       }
-      .third-one,
+      .third-one{
+        background-color: #03a67b;
+        background-size: 100% 100%;
+      }
       .third-four{
-        background: #03a67b;
+        background-color: #03a67b;
+        background-size: 100% 100%;
       }
       .third-three{
         position: absolute;
