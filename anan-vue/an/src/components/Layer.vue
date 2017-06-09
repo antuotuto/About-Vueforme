@@ -1,17 +1,18 @@
 <template>
   <div class="layer">
     <header>
-      <p class="logo">
-        王安安的想法
-        <!-- <img src="" alt=""> -->
+      <p class="logo" @click="$emit('linkTo')">
+        <router-link to="/">
+          王安安的介绍
+        </router-link>
       </p>
     </header>
     <main>
       <ul class="list">
-        <li v-for="(nav,index) in navs" :key="nav.title" @click="$emit('linkTo')" :style="'background-color:'+nav.bgcolor+';'">
+        <li v-for="(nav,index) in navs" :key="nav.title" @click="$emit('linkTo')" >
           <router-link :to="nav.router">
             <!-- <i class="icon iconfont"  :class="nav.icon"></i> -->
-            <p>{{ nav.title }}</p>
+            {{ nav.title }}
           </router-link>
         </li>
       </ul>
@@ -32,7 +33,7 @@
   import {
     ans
   } from '@/data'
-  
+
   export default {
     name: 'layer',
     data() {
@@ -49,6 +50,9 @@
 <style scoped lang="scss">
   @media screen and (max-width:940px) {
     .layer {
+      .router-link-active{
+        background: red;
+      }
       header {
         height: 70px;
         margin-bottom: 10px;
@@ -58,6 +62,9 @@
           margin: 0;
           font-size: 23px;
           font-weight: bold;
+          a{
+            background:#fff !important;
+          }
         }
       }
       main {
@@ -66,7 +73,6 @@
           li {
             list-style: none;
             width: 33.3%;
-            line-height: 60px;
             border-radius: 6px;
             box-sizing: border-box;
             display: flex;
@@ -76,15 +82,16 @@
             border: 1px solid #fff;
             a {
               flex-grow: 1;
-              color: #757575;
-              p {
-                color: #fff;
-                text-align: center;
-                margin: 0 auto;
-                font-weight: bold;
-                letter-spacing: 1px;
-                font-size: 15px;
-              }
+              color: #000;
+              height:100%;
+              width:100%;
+              line-height: 60px;
+              display: inline-block;
+              text-align: center;
+              font-weight: bold;
+              letter-spacing: 1px;
+              font-size: 15px;
+              border-radius: 5px;
             }
           }
         }
@@ -111,7 +118,7 @@
       }
     }
   }
-  
+
   @media screen and (min-width:950px) {
     .layer {
       height: 100%;
