@@ -47,12 +47,12 @@ const navs = [
   //   router: '/myself',
   //   bgcolor:'#00695C'
   // },
-  // {
-  //   title:'自我描述',
-  //   icon:['iconfont','icon-creativefill'],
-  //   router: '/myself',
-  //   bgcolor:'#2E7D32'
-  // },
+  {
+    title:'未来展望',
+    icon:['iconfont','icon-creativefill'],
+    router: '/future',
+    bgcolor:'#2E7D32'
+  },
   {
     title:'安安新闻',
     icon:['iconfont','icon-tianmaochaoshigouwuche'],

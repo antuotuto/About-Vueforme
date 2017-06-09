@@ -4,8 +4,8 @@
       <div class="blank" :class="showBlank" @click="closeBlank"></div>
       <router-view></router-view>
       <button type="button" name="button" class="btn" @click="toggleView">
-          <i class="icon iconfont"  :class="{'icon-all':currentView == 'view-main','icon-close':currentView != 'view-main'}"></i>
-        </button>
+            <i class="icon iconfont"  :class="{'icon-all':currentView == 'view-main','icon-close':currentView != 'view-main'}"></i>
+          </button>
     </div>
   
     <div class="view-down" :class="{ active: currentView == 'view-down' }">

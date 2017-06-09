@@ -8,6 +8,7 @@ import Goodthing from '@/components/Goodthing'
 import Like from '@/components/Like'
 import Colorful from '@/components/Colorful'
 import Welcome from '@/components/Welcome'
+import Future from '@/components/Future'
 
 Vue.use(Router)
 
@@ -52,6 +53,11 @@ const routes = [
     path: '/welcome',
     name: 'welcome',
     component: Welcome
+  },
+  {
+    path: '/future',
+    name: 'future',
+    component: Future
   }
 ]
 
