@@ -6,6 +6,8 @@
       </div>
       <div class="love-box-in">
         <p class="love-title  animated  fadeInLeft delay_400">孙琼瑶</p>
+        <p v-html="an" class="markdown-body"></p>
+        <p v-html="yao"  class="markdown-body"></p>
         <p class="love-reason animated  fadeInLeft delay_600">喜欢的理由安身立命你打开静安店看见爱上能看到萨拉斯柯达来看打了卡你</p>
         <div class="personal-information">
           <h4 class="animated  fadeInLeft delay_800">你已经看完了所有信息</h4>
@@ -17,14 +19,25 @@
 
 <script>
 import {goodthings} from '@/data'
+import {mackdoms} from '@/data'
+var marked = require('marked');
+import '@/assets/css/github-markdown.css'
+
 
 export default {
   name: 'like',
   data () {
     return {
       goodthings: goodthings,
+      an:'',
+      yao:'',
+      mackdoms:mackdoms
     }
   },
+  created(){
+    this.an = marked(this.mackdoms[0].title)
+    this.yao = marked(this.mackdoms[0].content)
+  }
 }
 </script>
 
@@ -41,6 +54,7 @@ export default {
         width:100%;
       }
       .love-box-in{
+        padding: 20px;
         .love-title{
           margin: 0 auto;
           width:100px;
