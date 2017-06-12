@@ -11,12 +11,11 @@
         <p class="love-reason animated  fadeInLeft delay_600">{{goodthing.content}}</p>
       </div>
     </div>
-    <section class="wrap-list">
-      <h2 class="title-primary">评论列表</h2>
-      <list-comment></list-comment>
-      <!-- <p v-html="an" class="markdown-body"></p>
-      <p v-html="yao" class="markdown-body"></p> -->
-    </section>
+    <router-link to="/goodthings">
+      <div class="get-back">
+        <i class="icon iconfont icon-toleft"></i>
+      </div>
+    </router-link>
   </div>
 </template>
 
@@ -83,8 +82,20 @@ export default {
         }
       }
     }
-    section{
-      padding: 30px;
+    .get-back{
+      height:50px;
+      width:50px;
+      border-radius: 50px;
+      background: #03a67b;
+      margin: 30px auto;
+      text-align: center;
+      box-shadow: 0 1px 5px rgba(0,0,0,.2), 0 2px 2px rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
+      i{
+        line-height: 50px;
+        color:white;
+        font-size: 22px;
+        font-weight: 500;
+      }
     }
   }
 }
