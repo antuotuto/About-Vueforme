@@ -7,11 +7,11 @@
             <i class="icon iconfont"  :class="{'icon-all':currentView == 'view-main','icon-close':currentView != 'view-main'}"></i>
           </button>
     </div>
-  
+
     <div class="view-down" :class="{ active: currentView == 'view-down' }">
       <components v-bind:is="viewDownComponent" @login="switchView( 'view-up','login')" @register="switchView('view-up','register')" @linkTo="linkToOn"></components>
     </div>
-  
+
     <div class="view-up" :class="{ active: currentView == 'view-up' }">
       <component v-bind:is="viewUpComponent"></component>
     </div>
@@ -22,7 +22,7 @@
   import layer from '@/components/Layer'
   import login from '@/pages/login'
   import register from '@/pages/Register';
-  
+
   export default {
     name: 'app',
     data() {
@@ -53,7 +53,6 @@
         this.currentView = 'view-main'
       },
       linkToOn: function() {
-        console.log('sdfsdf');
         this.currentView = 'view-main';
         this.showBlank = '';
       }
@@ -63,7 +62,7 @@
       login,
       register,
     }
-  
+
   }
 </script>
 
@@ -76,21 +75,21 @@
     height: 100%;
     width: 100%;
   }
-  
+
   a {
     text-decoration: none;
   }
-  
+
   a:focus,
   a:hover {
     color: #23527c;
     text-decoration: underline;
   }
-  
+
   button {
     outline: none !important;
   }
-  
+
   @media screen and (max-width:750px) {
     .main {
       height: 100%;
@@ -171,7 +170,7 @@
       }
     }
   }
-  
+
   @media screen and (min-width:970px) {
     .main {
       height: 100%;

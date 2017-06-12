@@ -7,3 +7,4 @@ export {myselfs} from './myselfs';
 export {goodthings} from './goodthings';
 export {colorfuls} from './colorfuls';
 export {mackdoms} from './mackdoms';
+export {comments} from './comments';

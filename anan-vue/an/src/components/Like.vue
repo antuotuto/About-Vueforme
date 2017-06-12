@@ -7,13 +7,17 @@
       <div class="love-box-in">
         <p class="love-title  animated  fadeInLeft delay_400">{{goodthing.title}}</p>
         <p v-html="an" class="markdown-body"></p>
-        <p v-html="yao"  class="markdown-body"></p>
+        <p v-html="yao" class="markdown-body"></p>
         <p class="love-reason animated  fadeInLeft delay_600">喜欢的理由安身立命你打开静安店看见爱上能看到萨拉斯柯达来看打了卡你</p>
         <div class="personal-information">
           <h4 class="animated  fadeInLeft delay_800">你已经看完了所有信息</h4>
         </div>
       </div>
     </div>
+    <section class="wrap-list">
+      <h1 class="title-primary">评论列表</h1>
+      <list-comment></list-comment>
+    </section>
   </div>
 </template>
 
@@ -22,6 +26,8 @@ import {goodthings} from '@/data'
 import {mackdoms} from '@/data'
 var marked = require('marked');
 import '@/assets/css/github-markdown.css'
+import listComment from '@/components/list-comment';
+import {comments} from '@/data'
 
 
 export default {
@@ -32,7 +38,7 @@ export default {
       an:'',
       yao:'',
       mackdoms:mackdoms,
-      goodthing:{}
+      goodthing:{},
     }
   },
   created(){
@@ -40,6 +46,9 @@ export default {
     this.yao = marked(this.mackdoms[0].content)
     this.goodthing = goodthings[this.$route.params.id -1]
   },
+  components: {
+    listComment
+  }
 }
 </script>
 

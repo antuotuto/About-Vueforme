@@ -1,5 +1,5 @@
 <template>
-  <div class="welcome">
+  <div class="welcomeMan">
     <div class="third-paper">
       <div class="box-third third-one animated  fadeInLeft delay_200">
         <!-- <img src="" alt=""> -->
@@ -137,7 +137,7 @@
 import {ans} from '@/data'
 
 export default {
-  name: 'welcome',
+  name: 'welcomeMan',
   data () {
     return {
       ans: ans,
@@ -149,7 +149,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style  scoped lang="scss">
 @media screen and (max-width:940px){
-  .welcome{
+  .welcomeMan{
     height:100%;
     width:100%;
     overflow: scroll;
@@ -533,7 +533,7 @@ export default {
   }
 }
 @media screen and (min-width:950px){
-  .welcome{
+  .welcomeMan{
     height:100%;
     width:100%;
     overflow: scroll;

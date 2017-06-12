@@ -11,7 +11,7 @@
       <ul class="list">
         <li v-for="(nav,index) in navs" :key="nav.title" @click="$emit('linkTo')" >
           <router-link :to="nav.router">
-            <!-- <i class="icon iconfont"  :class="nav.icon"></i> -->
+            <i class="icon iconfont"  :class="nav.icon"></i>
             {{ nav.title }}
           </router-link>
         </li>
@@ -50,9 +50,6 @@
 <style scoped lang="scss">
   @media screen and (max-width:940px) {
     .layer {
-      .router-link-active{
-        background: #03a67b;
-      }
       header {
         height: 70px;
         margin-bottom: 10px;
@@ -63,7 +60,7 @@
           font-size: 23px;
           font-weight: bold;
           a{
-            background:#fff !important;
+            color: rgba(0,0,0,0.7);
           }
         }
       }
@@ -72,27 +69,40 @@
           padding: 5px;
           li {
             list-style: none;
-            width: 33.3%;
+            width: 100%;
             border-radius: 6px;
             box-sizing: border-box;
             display: flex;
             flex-direction: wrap-reverse;
             display: inline-block;
             flex-wrap: wrap;
-            border: 1px solid #fff;
+            position: relative;
+            height: 60px;
+            margin-top: 5px;
+            .router-link-active{
+              color:#db4437;
+              border: 1px solid #db4437;
+              .icon{
+                color:#db4437;
+              }
+            }
             a {
               flex-grow: 1;
-              color: #000;
               height:100%;
               width:100%;
-              line-height: 60px;
               display: inline-block;
-              text-align: center;
+              text-align: left;
               font-weight: bold;
               letter-spacing: 1px;
               font-size: 15px;
               border-radius: 5px;
               border: 1px solid #eee;
+              color: rgba(0,0,0,0.87);
+              line-height: 60px;
+              padding-left: 20px;
+              .icon{
+                color:#757575;
+              }
             }
           }
         }
@@ -108,12 +118,15 @@
             border: 0;
             padding: 0;
             float: left;
-            border: 1px solid #eee;
-            color: #000;
+            font-weight: bold;
+            color: rgba(0,0,0,0.78);
             font-size: 17px;
+            border-top: 1px solid #eee;
+            border-right: 1px solid #eee;
+            background: #fff;
           }
           .on {
-            border: 1px solid #eee;
+            border-right: 0;
           }
         }
       }

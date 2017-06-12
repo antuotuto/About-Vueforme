@@ -11,12 +11,12 @@ const navs = [
     router: '/colorful',
     bgcolor:'#C62828'
   },
-  {
-    title:'个人信息',
-    icon:['iconfont','icon-shoucangxuanzhong'],
-    router: '/myself',
-    bgcolor:'#4527A0'
-  },
+  // {
+  //   title:'个人信息',
+  //   icon:['iconfont','icon-shoucangxuanzhong'],
+  //   router: '/myself',
+  //   bgcolor:'#4527A0'
+  // },
   // {
   //   title:'人物',
   //   icon:['iconfont','icon-timefill'],
