@@ -3,7 +3,7 @@
     <header>
       <p class="logo" @click="$emit('linkTo')">
         <router-link to="/">
-          王安安的介绍
+          王安安的介绍页
         </router-link>
       </p>
     </header>
@@ -51,7 +51,7 @@
   @media screen and (max-width:940px) {
     .layer {
       .router-link-active{
-        background: red;
+        background: #03a67b;
       }
       header {
         height: 70px;
@@ -92,6 +92,7 @@
               letter-spacing: 1px;
               font-size: 15px;
               border-radius: 5px;
+              border: 1px solid #eee;
             }
           }
         }
@@ -107,12 +108,12 @@
             border: 0;
             padding: 0;
             float: left;
-            background: rgba(0, 136, 122, .7);
-            color: #fff;
+            border: 1px solid #eee;
+            color: #000;
             font-size: 17px;
           }
           .on {
-            background: rgba(210, 47, 47, .7);
+            border: 1px solid #eee;
           }
         }
       }

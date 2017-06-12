@@ -12,12 +12,6 @@ const navs = [
     bgcolor:'#C62828'
   },
   {
-    title:'介绍页',
-    icon:['iconfont','icon-peoplefill'],
-    router: '/',
-    bgcolor:'#AD1457'
-  },
-  {
     title:'个人信息',
     icon:['iconfont','icon-shoucangxuanzhong'],
     router: '/myself',

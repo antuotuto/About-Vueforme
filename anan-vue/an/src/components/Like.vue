@@ -2,10 +2,10 @@
   <div class="like">
     <div class="love-message"  >
       <div class="love-img  animated  fadeInLeft delay_300">
-        <img src="http://ooi407n8x.bkt.clouddn.com/yao/oneyao-2.png" alt="">
+        <img :src="goodthing.img" alt="">
       </div>
       <div class="love-box-in">
-        <p class="love-title  animated  fadeInLeft delay_400">孙琼瑶</p>
+        <p class="love-title  animated  fadeInLeft delay_400">{{goodthing.title}}</p>
         <p v-html="an" class="markdown-body"></p>
         <p v-html="yao"  class="markdown-body"></p>
         <p class="love-reason animated  fadeInLeft delay_600">喜欢的理由安身立命你打开静安店看见爱上能看到萨拉斯柯达来看打了卡你</p>
@@ -31,13 +31,15 @@ export default {
       goodthings: goodthings,
       an:'',
       yao:'',
-      mackdoms:mackdoms
+      mackdoms:mackdoms,
+      goodthing:{}
     }
   },
   created(){
     this.an = marked(this.mackdoms[0].title)
     this.yao = marked(this.mackdoms[0].content)
-  }
+    this.goodthing = goodthings[this.$route.params.id -1]
+  },
 }
 </script>
 
