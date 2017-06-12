@@ -19,7 +19,7 @@
             <div class="love-box-in">
               <p class="love-title  animated  fadeInLeft delay_800">{{nav.title}}</p>
               <p class="love-reason animated  fadeInLeft delay_900">{{nav.reason}}</p>
-              <p class="product animated  fadeInLeft delay_1000">喜欢</p>
+              <p class="product animated  fadeInLeft delay_1000">喜欢物品</p>
             </div>
           </router-link>
         </div>

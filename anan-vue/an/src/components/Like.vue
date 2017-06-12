@@ -6,9 +6,8 @@
       </div>
       <div class="love-box-in">
         <p class="love-title  animated  fadeInLeft delay_400">{{goodthing.title}}</p>
-        <p v-html="an" class="markdown-body"></p>
-        <p v-html="yao" class="markdown-body"></p>
-        <p class="love-reason animated  fadeInLeft delay_600">喜欢的理由安身立命你打开静安店看见爱上能看到萨拉斯柯达来看打了卡你</p>
+
+        <p class="love-reason animated  fadeInLeft delay_600">{{goodthing.reason}}</p>
         <div class="personal-information">
           <h4 class="animated  fadeInLeft delay_800">你已经看完了所有信息</h4>
         </div>
@@ -17,6 +16,8 @@
     <section class="wrap-list">
       <h1 class="title-primary">评论列表</h1>
       <list-comment></list-comment>
+      <p v-html="an" class="markdown-body"></p>
+      <p v-html="yao" class="markdown-body"></p>
     </section>
   </div>
 </template>
@@ -68,8 +69,8 @@ export default {
         padding: 20px;
         .love-title{
           margin: 0 auto;
-          width:100px;
           padding: 5px;
+          width:130px;
           text-align: center;
           margin-top: 20px;
           border: 1px solid #000;
@@ -102,7 +103,7 @@ export default {
       .love-box-in{
         .love-title{
           margin: 0 auto;
-          width:100px;
+          width:130px;
           padding: 5px;
           text-align: center;
           margin-top: 20px;
