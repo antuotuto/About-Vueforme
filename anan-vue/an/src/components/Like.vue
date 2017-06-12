@@ -1,23 +1,21 @@
 <template>
   <div class="like">
-    <div class="love-message"  >
+    <div class="love-message">
       <div class="love-img  animated  fadeInLeft delay_300">
         <img :src="goodthing.img" alt="">
       </div>
       <div class="love-box-in">
         <p class="love-title  animated  fadeInLeft delay_400">{{goodthing.title}}</p>
 
-        <p class="love-reason animated  fadeInLeft delay_600">{{goodthing.reason}}</p>
-        <div class="personal-information">
-          <h4 class="animated  fadeInLeft delay_800">你已经看完了所有信息</h4>
-        </div>
+        <p class="love-reason love-reason-title animated  fadeInLeft delay_600">{{goodthing.reason}}</p>
+        <p class="love-reason animated  fadeInLeft delay_600">{{goodthing.content}}</p>
       </div>
     </div>
     <section class="wrap-list">
-      <h1 class="title-primary">评论列表</h1>
+      <h2 class="title-primary">评论列表</h2>
       <list-comment></list-comment>
-      <p v-html="an" class="markdown-body"></p>
-      <p v-html="yao" class="markdown-body"></p>
+      <!-- <p v-html="an" class="markdown-body"></p>
+      <p v-html="yao" class="markdown-body"></p> -->
     </section>
   </div>
 </template>
@@ -76,17 +74,17 @@ export default {
           border: 1px solid #000;
         }
         .love-reason{
+          padding: 0 30px 0 30px;
+        }
+        .love-reason-title{
+          font-size: 17px;
+          font-weight: bold;
           padding: 30px;
         }
-        .personal-information{
-          h4{
-            color: #9e9e9e;
-            text-align: center;
-            margin: 20px;
-            font-size: 15px;
-          }
-        }
       }
+    }
+    section{
+      padding: 30px;
     }
   }
 }

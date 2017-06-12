@@ -7,7 +7,7 @@ const navs = [
   },
   {
     title:'颜色',
-    icon:['iconfont','icon-zanxuanzhong'],
+    icon:['iconfont','icon-tianmaochaoshigouwuche'],
     router: '/colorful',
     bgcolor:'#C62828'
   },
@@ -42,14 +42,14 @@ const navs = [
   //   bgcolor:'#00695C'
   // },
   {
-    title:'未来展望',
+    title:'如果有一天',
     icon:['iconfont','icon-creativefill'],
     router: '/future',
     bgcolor:'#2E7D32'
   },
   {
-    title:'安安新闻',
-    icon:['iconfont','icon-tianmaochaoshigouwuche'],
+    title:'王安安的配件',
+    icon:['iconfont','icon-zanxuanzhong'],
     router: '/goodthing',
     bgcolor:'#2E7D32'
   },
