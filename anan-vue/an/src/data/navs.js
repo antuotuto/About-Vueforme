@@ -1,6 +1,12 @@
 const navs = [
   {
-    title:'首页',
+    title:'王安安的配件',
+    icon:['iconfont','icon-zanxuanzhong'],
+    router: '/goodthing',
+    bgcolor:'#2E7D32'
+  },
+  {
+    title:'新闻页',
     icon:['iconfont','icon-31shouyexuanzhong'],
     router: '/home',
     bgcolor:'#6A1B9A'
@@ -46,13 +52,7 @@ const navs = [
     icon:['iconfont','icon-creativefill'],
     router: '/future',
     bgcolor:'#2E7D32'
-  },
-  {
-    title:'王安安的配件',
-    icon:['iconfont','icon-zanxuanzhong'],
-    router: '/goodthing',
-    bgcolor:'#2E7D32'
-  },
+  }
 ]
 
 export {navs}

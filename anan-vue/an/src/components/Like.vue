@@ -23,8 +23,6 @@
       <i class="icon iconfont icon-toleft"></i>
     </router-link>
     </div>
-
-
   </div>
 </template>
 

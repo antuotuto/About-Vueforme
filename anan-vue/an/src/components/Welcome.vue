@@ -126,7 +126,7 @@
     <div class="end-paper">
       <p class="hot">Hot an an</p>
       <p class="mind">FORGET ME NOT</p>
-      <router-link to="/home">
+      <router-link to="/goodthing">
         <button type="button" name="button">进入首页</button>
       </router-link>
     </div>
