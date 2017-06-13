@@ -148,7 +148,7 @@
       position: fixed;
       top: 0;
       left: 0;
-      overflow: scroll;
+      overflow: hidden;
       transition: .4s;
       transform: translate3d(0, -100%, 0);
       &.active {
@@ -163,7 +163,7 @@
       top: 0;
       left: 0;
       transition: .4s;
-      overflow: scroll;
+      overflow: hidden;
       transform: translate3d(0, 100%, 0);
       &.active {
         transform: translate3d(0, 0, 0);
@@ -206,7 +206,7 @@
       position: fixed;
       top: 0;
       left: 0;
-      overflow: scroll;
+      overflow: hidden;
       transition: .4s;
       transform: translate3d(-100%, 0, 0);
       z-index: 1000;
@@ -222,7 +222,7 @@
       top: 0;
       left: 0;
       transition: .4s;
-      overflow: scroll;
+      overflow: hidden;
       transform: translate3d(-100%, 0, 0);
       z-index: 1000;
       &.active {

@@ -1,10 +1,11 @@
 <template>
   <div class="goodthing">
     <header>
-      <div class="name animated  bounceInDown delay_0">
-        <!-- <img src="" alt=""> -->
-        <p class=" animated  bounceInDown delay_200">an</p>
-      </div>
+      <router-link to="/">
+        <div class="name animated  bounceInDown delay_0">
+          <p class=" animated  bounceInDown delay_200">an</p>
+        </div>
+      </router-link>
     </header>
     <main>
       <p class=" animated  fadeInLeft delay_400">推荐社区</p>
@@ -40,8 +41,10 @@ export default {
   data () {
     return {
       goodthings : goodthings,
+      wantOther: false
     }
   },
+  
 }
 </script>
 

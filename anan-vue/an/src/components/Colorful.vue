@@ -48,6 +48,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style  scoped lang="scss">
 
+@media screen and (max-width:940px){
   .colorful{
     color: #546576;
     background: #F0F4F8;
@@ -121,6 +122,7 @@ export default {
               background: #5A3662;
               padding-left:10px;
               line-height: 20px;
+              border-radius: 0 0 5px 5px;
               &:hover p{
                 display: block;
               }
@@ -164,6 +166,129 @@ export default {
       }
     }
   }
+}
+
+@media screen and (min-width:950px){
+  .colorful{
+    color: #546576;
+    background: #F0F4F8;
+    height:100%;
+    width:100%;
+    overflow: scroll;
+    margin: 0 auto;
+    header{
+      height:50px;
+      background: #fff;
+      box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1);
+      p{
+        text-align: center;
+        line-height: 50px;
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 1px;
+      }
+    }
+    footer{
+      padding: 10px;
+      width:980px;
+      margin: 0 auto;
+      .color-box{
+        margin: 0 auto;
+        .color-size{
+          background: #fff;
+          width: 300px;
+          margin: 10px;
+          padding: 15px 15px 20px 15px;
+          display: inline-block;
+          border-radius: 4px;
+          position: relative;
+          box-shadow: 0 2px 5px 0 rgba(0,0,0,0.08);
+          .color-four{
+            width:100%;
+            height:280px;
+            border-radius: 4px;
+            overflow: hidden;
+            p{
+              display: none;
+            }
+            .color-frist{
+              height:110px;
+              background: #FFFB85;
+              line-height: 110px;
+              padding-left:10px;
+              &:hover p{
+                display: block;
+              }
+            }
+            .color-second{
+              height:70px;
+              background: #FFD464;
+              line-height: 70px;
+              padding-left:10px;
+              &:hover p{
+                display: block;
+              }
+            }
+            .color-third{
+              height: 40px;
+              background: #FA5B75;
+              padding-left:10px;
+              line-height: 40px;
+              &:hover p{
+                display: block;
+              }
+            }
+            .color-fourth{
+              height: 40px;
+              background: #5A3662;
+              padding-left:10px;
+              line-height: 40px;
+              border-radius: 0 0 5px 5px;
+              &:hover p{
+                display: block;
+              }
+            }
+          }
+          .love-color{
+            border-radius: 4px;
+            border: 1px solid #cddbee;
+            box-sizing: border-box;
+            border: 1px solid #E6EAEE;
+            display: inline-block;
+            height:30px;
+            width:50px;
+            margin-top: 8px;
+            box-sizing: border-box;
+            padding:0 10px 0 5px;
+            position: relative;
+            i{
+              color: #000;
+              font-size: 17px;
+              line-height: 25px;
+              position: absolute;
+              top: 2px;
+              left: 9px;
+            }
+            p{
+              margin: 0;
+              line-height: 30px;
+              text-align: right;
+            }
+          }
+          .left-font{
+            display: inline-block;
+            margin: 0 ;
+            font-size: 10px;
+            position: absolute;
+            right: 18px;
+            bottom: 21px;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 
 </style>

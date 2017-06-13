@@ -245,6 +245,7 @@ export default {
             color: #03a67b;
             transition: .6s;
             font-size: 15px;
+            text-decoration: none;
             &:hover{
               background: #03a67b;
               color:#fff;

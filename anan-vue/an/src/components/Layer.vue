@@ -61,6 +61,7 @@
           font-weight: bold;
           a{
             color: rgba(0,0,0,0.7);
+            text-decoration: none;
           }
         }
       }
@@ -100,6 +101,7 @@
               color: rgba(0,0,0,0.87);
               line-height: 60px;
               padding-left: 20px;
+              text-decoration: none;
               .icon{
                 color:#757575;
               }
@@ -137,9 +139,9 @@
     .layer {
       height: 100%;
       width: 100%;
+      overflow: hidden;
       header {
         height: 70px;
-        border-bottom: 1px solid #ddd;
         margin-bottom: 10px;
         box-sizing: border-box;
         padding: 23px 15px;
@@ -147,6 +149,9 @@
           margin: 0;
           font-size: 23px;
           font-weight: bold;
+          a{
+            color: rgba(0,0,0,0.7);
+          }
         }
       }
       main {
@@ -154,25 +159,40 @@
           padding: 5px;
           li {
             list-style: none;
-            width: 33.3%;
-            line-height: 60px;
+            width: 100%;
             border-radius: 6px;
             box-sizing: border-box;
             display: flex;
             flex-direction: wrap-reverse;
             display: inline-block;
             flex-wrap: wrap;
-            border: 1px solid #fff;
+            position: relative;
+            height: 60px;
+            margin-top: 5px;
+            .router-link-active{
+              color:#db4437;
+              border: 1px solid #db4437;
+              .icon{
+                color:#db4437;
+              }
+            }
             a {
               flex-grow: 1;
-              color: #757575;
-              p {
-                color: #fff;
-                text-align: center;
-                margin: 0 auto;
-                font-weight: bold;
-                letter-spacing: 1px;
-                font-size: 15px;
+              height:100%;
+              width:100%;
+              display: inline-block;
+              text-align: left;
+              font-weight: bold;
+              letter-spacing: 1px;
+              font-size: 15px;
+              border-radius: 5px;
+              border: 1px solid #d2d2d2;
+              color: rgba(0,0,0,0.87);
+              line-height: 60px;
+              padding-left: 20px;
+              text-decoration: none;
+              .icon{
+                color:#757575;
               }
             }
           }
@@ -189,12 +209,15 @@
             border: 0;
             padding: 0;
             float: left;
-            background: #EF6C00;
-            color: #fff;
+            font-weight: bold;
+            color: rgba(0,0,0,0.78);
             font-size: 17px;
+            border-top: 1px solid #eee;
+            border-right: 1px solid #eee;
+            background: #fff;
           }
           .on {
-            background: #6A1B9A;
+            border-right: 0;
           }
         }
       }
