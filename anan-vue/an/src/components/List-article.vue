@@ -6,9 +6,9 @@
           <ul class="list-article animated  fadeInLeft delay_0">
             <li class="item-article" v-for="item in items">
               <router-link :to="{ name: 'article', params: { id: item.id }}">
-                <h4 class="title animated  fadeInLeft delay_200">{{item.title}}</h4>
-                <p class="des animated  fadeInLeft delay_400">{{item.description}}</p>
-                <div class="cover animated  fadeInLeft delay_600">
+                <h4 class="title animated  fadeInLeft delay_100">{{item.title}}</h4>
+                <p class="des animated  fadeInLeft delay_200">{{item.description}}</p>
+                <div class="cover animated  fadeInLeft delay_300">
                   <img :src="item.cover" alt="">
                   <!-- <img src="http://ooi407n8x.bkt.clouddn.com/yao/oneyao-4.png" alt=""> -->
                 </div>

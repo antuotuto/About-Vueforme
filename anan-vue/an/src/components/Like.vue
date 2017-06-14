@@ -1,13 +1,13 @@
 <template>
   <div class="like">
     <div class="love-message">
-      <div class="love-img  animated  fadeInLeft delay_300">
+      <div class="love-img  animated  fadeInLeft delay_100">
         <img :src="goodthing.img" alt="">
       </div>
       <div class="love-box-in">
-        <p class="love-title  animated  fadeInLeft delay_400" @click="wantOtherTrue">{{goodthing.title}}</p>
-        <p class="love-reason love-reason-title animated  fadeInLeft delay_600">{{goodthing.reason}}</p>
-        <p class="love-reason animated  fadeInLeft delay_600">{{goodthing.content}}</p>
+        <p class="love-title  animated  fadeInLeft delay_200" @click="wantOtherTrue">{{goodthing.title}}</p>
+        <p class="love-reason love-reason-title animated  fadeInLeft delay_300">{{goodthing.reason}}</p>
+        <p class="love-reason animated  fadeInLeft delay_300">{{goodthing.content}}</p>
         <div  class="modle-css" :class="{ active: wantOther }">
           <p>你将要离开王安安网页</p>
           <router-link :to="goodthing.router">

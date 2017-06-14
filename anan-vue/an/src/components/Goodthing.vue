@@ -3,23 +3,23 @@
     <header>
       <router-link to="/">
         <div class="name animated  bounceInDown delay_0">
-          <p class=" animated  bounceInDown delay_200">an</p>
+          <p class=" animated  bounceInDown delay_100">an</p>
         </div>
       </router-link>
     </header>
     <main>
-      <p class=" animated  fadeInLeft delay_400">推荐社区</p>
+      <p class=" animated  fadeInLeft delay_200">推荐社区</p>
     </main>
     <footer>
-      <div class="love-box  animated  fadeInLeft delay_400">
+      <div class="love-box  animated  fadeInLeft delay_200">
         <div class="love-message" v-for="(nav,index) in goodthings" :key="nav.title" >
           <router-link :to="{ name: 'like', params: { id: nav.id }}">
-            <div class="love-img  animated  fadeInLeft delay_500">
+            <div class="love-img  animated  fadeInLeft delay_300">
               <img :src="nav.img" alt="">
             </div>
             <div class="love-box-in">
-              <p class="love-title  animated  fadeInLeft delay_550">{{nav.title}}</p>
-              <p class="love-reason animated  fadeInLeft delay_600">{{nav.reason}}</p>
+              <p class="love-title  animated  fadeInLeft delay_330">{{nav.title}}</p>
+              <p class="love-reason animated  fadeInLeft delay_300">{{nav.reason}}</p>
               <p class="product animated  fadeInLeft delay_600">喜欢物品</p>
             </div>
           </router-link>

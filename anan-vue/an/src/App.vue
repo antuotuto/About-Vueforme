@@ -2,7 +2,14 @@
   <div id="app">
     <div class="main">
       <div class="blank" :class="showBlank" @click="closeBlank"></div>
-      <router-view></router-view>
+      <transition name="router-fade" mode="out-in">
+  			<keep-alive>
+  			    <router-view v-if="$route.meta.keepAlive"></router-view>
+  			</keep-alive>
+      	</transition>
+      	<transition name="router-fade" mode="out-in">
+  			<router-view v-if="!$route.meta.keepAlive"></router-view>
+  		</transition>
       <button type="button" name="button" class="btn" @click="toggleView">
         <i class="icon iconfont"  :class="{'icon-all':currentView == 'view-main','icon-close':currentView != 'view-main'}"></i>
       </button>
@@ -75,6 +82,13 @@
     height: 100%;
     width: 100%;
   }
+
+  .router-fade-enter-active, .router-fade-leave-active {
+	  	transition: opacity  .3s;
+	}
+	.router-fade-enter, .router-fade-leave-active {
+	  	opacity: 0;
+	}
 
   a {
     text-decoration: none;

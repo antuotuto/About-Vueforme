@@ -1,25 +1,25 @@
 <template>
   <div class="welcomeMan">
     <div class="third-paper">
-      <div class="box-third third-one animated  fadeInLeft delay_200">
+      <div class="box-third third-one animated  fadeInLeft delay_100">
         <!-- <img src="" alt=""> -->
       </div>
-      <div class="box-third third-two animated  fadeInLeft delay_200">
+      <div class="box-third third-two animated  fadeInLeft delay_100">
         <div class="content">
-          <p class="name animated  fadeInLeft delay_400">antuotuo</p>
-          <p class="title animated  fadeInLeft delay_600">我对人生的思考</p>
-          <p class="time animated  fadeInLeft delay_800">06.06.2017</p>
-          <p class="article animated  fadeInLeft delay_1000">这个世界上本就没有必须存在的事实 去发现真正属于你的事实 不是其他人对你人生的思考 用自己的理解去编织属于你自己的全新世界 赠予那些此时此刻稳步前进的筑梦者</p>
-          <p class="button-fond animated  fadeInLeft delay_1200">王安安</p>
+          <p class="name animated  fadeInLeft delay_200">antuotuo</p>
+          <p class="title animated  fadeInLeft delay_200">我对人生的思考</p>
+          <p class="time animated  fadeInLeft delay_200">06.06.2017</p>
+          <p class="article animated  fadeInLeft delay_300">这个世界上本就没有必须存在的事实 去发现真正属于你的事实 不是其他人对你人生的思考 用自己的理解去编织属于你自己的全新世界 赠予那些此时此刻稳步前进的筑梦者</p>
+          <p class="button-fond animated  fadeInLeft delay_300">王安安</p>
         </div>
       </div>
       <div class="box-third third-three animated  fadeInLeft delay_200">
         <div class="content">
-          <p class="name animated  fadeInLeft delay_400">antuotuo</p>
-          <p class="title animated  fadeInLeft delay_600">我一直向前的理由</p>
-          <p class="time animated  fadeInLeft delay_800">06.06.2017</p>
-          <p class="article animated  fadeInLeft delay_1000">技术之所以不断更新迭代 是因为总有一些人想弄些黑科技出来</p>
-          <p class="button-fond animated  fadeInLeft delay_1200">王安安</p>
+          <p class="name animated  fadeInLeft delay_200">antuotuo</p>
+          <p class="title animated  fadeInLeft delay_300">我一直向前的理由</p>
+          <p class="time animated  fadeInLeft delay_200">06.06.2017</p>
+          <p class="article animated  fadeInLeft delay_300">技术之所以不断更新迭代 是因为总有一些人想弄些黑科技出来</p>
+          <p class="button-fond animated  fadeInLeft delay_200">王安安</p>
         </div>
       </div>
       <div class="box-third third-four animated  fadeInLeft delay_200">
