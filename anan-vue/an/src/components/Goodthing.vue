@@ -43,8 +43,7 @@ export default {
       goodthings : goodthings,
       wantOther: false
     }
-  },
-  
+  }
 }
 </script>
 

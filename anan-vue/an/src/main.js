@@ -6,7 +6,7 @@ import Vue from 'vue'
 import router from './router'
 
 // 全局样式
-import '@/assets/iconfont/iconfont.css'
+import '../static/iconfont/iconfont.css'
 import '@/assets/css/animate.css'
 import '@/assets/css/delay.css'
 import 'bootstrap/dist/css/bootstrap.min.css'

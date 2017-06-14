@@ -19,7 +19,6 @@
     </div>
     <div class="get-back animated  fadeInLeft delay_600">
       <router-link to="/goodthing">
-
       <i class="icon iconfont icon-toleft"></i>
     </router-link>
     </div>
