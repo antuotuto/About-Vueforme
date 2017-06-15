@@ -199,8 +199,12 @@
               line-height: 60px;
               padding-left: 20px;
               text-decoration: none;
+              transition: .2s;
               .icon{
                 color:#757575;
+              }
+              &:hover{
+                border: 1px solid #db4437;
               }
             }
           }
@@ -223,6 +227,11 @@
             border-top: 1px solid #eee;
             border-right: 1px solid #eee;
             background: #fff;
+            transition: .4s;
+            &:hover{
+              background: #03a67b;
+              color:#fff;
+            }
           }
           .on {
             border-right: 0;

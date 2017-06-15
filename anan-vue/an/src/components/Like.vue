@@ -22,6 +22,7 @@
       <i class="icon iconfont icon-toleft"></i>
     </router-link>
     </div>
+    <div class="bottom-color"></div>
   </div>
 </template>
 
@@ -71,6 +72,16 @@ export default {
     width:100%;
     overflow: scroll;
     position: relative;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+    .bottom-color{
+      position: absolute;
+      bottom: 0;
+      left:0;
+      width:100%;
+      height:50px;
+      background: #d4d4d4;
+    }
     .love-message{
       .love-img{
         width:100%;
@@ -157,6 +168,19 @@ export default {
     width:700px;
     margin: 0 auto;
     position: relative;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+    border-left: 2px solid #03a67b;
+    border-right: 2px solid #03a67b;
+    border-top: 2px solid #03a67b;
+    .bottom-color{
+      position: absolute;
+      bottom: 0;
+      left:0;
+      width:100%;
+      height:50px;
+      background: #03a67b;
+    }
     .love-message{
       width:100%;
       .love-img{
