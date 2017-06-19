@@ -11,7 +11,7 @@
 
    vue init webpack an
 
-   手动
+   手动加载项目
 
    npm init
 
