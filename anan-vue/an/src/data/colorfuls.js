@@ -174,6 +174,69 @@ const colorfuls = [
     colorthree:'#FFFBCB',
     colorfour:'#FFE869'
   },
+  {
+    title:'8',
+    colorone:'#FA4659',
+    colortwo:'#FEFFE4',
+    colorthree:'#A3DE83',
+    colorfour:'#2EB872'
+  },
+  {
+    title:'8',
+    colorone:'#2C2D34',
+    colortwo:'#E94822',
+    colorthree:'#F2910A',
+    colorfour:'#EFD510'
+  },
+  {
+    title:'8',
+    colorone:'#FFB400',
+    colortwo:'#FFFBE0',
+    colorthree:'#2994B2',
+    colorfour:'#474744'
+  },
+  {
+    title:'8',
+    colorone:'#343434',
+    colortwo:'#2D4059',
+    colorthree:'#EA5455',
+    colorfour:'#FDE9C9'
+  },
+  {
+    title:'8',
+    colorone:'#F23557',
+    colortwo:'#F0D43A',
+    colorthree:'#22B2DA',
+    colorfour:'#3B4A6B'
+  },
+  {
+    title:'8',
+    colorone:'#303841',
+    colortwo:'#3A4750',
+    colorthree:'#F6C90E',
+    colorfour:'#EEEEEE'
+  },
+  {
+    title:'8',
+    colorone:'#FF7676',
+    colortwo:'#F6F49D',
+    colorthree:'#5DAE8B',
+    colorfour:'#466C95'
+  },
+  {
+    title:'8',
+    colorone:'#F87D09',
+    colortwo:'#F6F6F6',
+    colorthree:'#A7CDCC',
+    colorfour:'#004A55'
+  },
+  {
+    title:'8',
+    colorone:'#504D4D',
+    colortwo:'#646363',
+    colorthree:'#F5B316',
+    colorfour:'#E7E5E5'
+  },
 
 ]
 
